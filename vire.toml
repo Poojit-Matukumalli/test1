@@ -1,0 +1,11 @@
+# A toml config file for vire CI/CD (The other project I'm building)
+# Note, Vire only reads the vire.toml in main.
+
+[details]
+framework = "vite"
+package_manager = "npm"
+
+[project]
+framework_version = "22"    # Node version
+output_dir = "dist"   # Match this with the framework's output directory
+dependencies=true # Use true if it needs npm install. otherwise use false
